@@ -31,6 +31,6 @@ class RestServiceApplicationTests {
     void testDoubling() throws Exception {
         int number = 5;
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/double?number=" + number,
-                String.class)).contains("\"number\":" + (number * 2));
+                String.class)).contains("\"number\":" + 10);
     }
 }
